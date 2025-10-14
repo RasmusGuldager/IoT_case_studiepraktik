@@ -1,5 +1,3 @@
-// iot_backend.h
-// ----------------------------------------------------
 // Håndterer WiFi og webserver som et Access Point (AP)
 
 #include <WiFi.h>
