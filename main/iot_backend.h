@@ -7,47 +7,17 @@ const char* apSSID = "gruppe_xx";       // Navnet på ESP WiFi
 const char* apPassword = "12345678";    // Minimum 8 karakterer
 
 WebServer server(80);
-String lastCommand = "";
+char[]* lastCommand;
 
-void handleRoot() {
-  String html = "<h1>IoT Light Control</h1>"
-                "<button onclick=\"fetch('/on')\">Tænd</button>"
-                "<button onclick=\"fetch('/off')\">Sluk</button>";
-  server.send(200, "text/html", html);
-}
+void handleRoot() {}
 
-void handleOn() {
-  lastCommand = "ON";
-  server.send(200, "text/plain", "OK");
-}
+void handleOn() {}
 
-void handleOff() {
-  lastCommand = "OFF";
-  server.send(200, "text/plain", "OK");
-}
+void handleOff() {}
 
-void initWiFiAndServer() {
-  Serial.println("Starter ESP i Access Point mode...");
-  
-  WiFi.softAP(apSSID, apPassword);  // Starter AP
-  IPAddress IP = WiFi.softAPIP();
-  Serial.print("AP IP: ");
-  Serial.println(IP);
+void initWiFiAndServer() {}
 
-  server.on("/", handleRoot);
-  server.on("/on", handleOn);
-  server.on("/off", handleOff);
+char[]* getWebCommand() {}
 
-  server.begin();
-  Serial.println("Server startet i AP mode!");
-}
+void handleClient() {}
 
-String getWebCommand() {
-  String cmd = lastCommand;
-  lastCommand = "";  // Tøm beskeden efter brug
-  return cmd;
-}
-
-void handleClient() {
-  server.handleClient();
-}
