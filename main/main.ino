@@ -3,8 +3,6 @@
 // Denne kode styrer et LED-lys via en besked fra nettet.
 // Alt netværkshåndtering ligger i iot_backend.h
 
-#include "iot_backend.h"
-
 int ledPin = 2;        // Pin til LED (kan ændres)
 bool lightOn = false;  // Holder styr på status
 
