@@ -16,7 +16,7 @@ Kan i søge inspiration i mappen "resources" eller google jer frem til eksempler
 
 
 
-## Hvis i skal bruge pins på jeres ESP kan i se et pinout herunder
+## Hvis i skal bruge pins på jeres ESP kan i se et pinout herunder. Pas på med at bruge pins der har andre formål end GPIO.
 
 **ESP32-C3 Dev Module**
 
