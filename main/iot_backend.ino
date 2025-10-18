@@ -11,8 +11,8 @@ String lastCommand = "";
 
 void handleRoot() {
   String html = "<h1>IoT Light Control</h1>"
-                "<button onclick=\"fetch('/on')\">Tænd</button>"
-                "<button onclick=\"fetch('/off')\">Sluk</button>";
+                "<button onclick=\"fetch('/on')\">Turn ON</button>";
+                "<button onclick=\"fetch('/off')\">Turn OFF</button>";
   server.send(200, "text/html", html);
 }
 
