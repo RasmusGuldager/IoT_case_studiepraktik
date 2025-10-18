@@ -12,11 +12,13 @@ Al kode i skal bruge til at løse det initielle problem ligger i mappen main, so
 
 ## Når der skal løses opgaver
 
-Kan i søge inspiration i mappen "resources" eller google jer frem til eksempler
+Prøv selv at spørg alt det I vil. Vi er her for at hjælpe jer. For at få hjælp til syntax eller andre funktionalitet i Arduino kan i google jer frem til det meste.
+
+Hvis i vælger at løse opgaven med JSON ligger der noget eksempelkode i JSON_example.ino der forhåbentlig kan hjælpe jer på vej. 
 
 
 
-## Hvis i skal bruge pins på jeres ESP kan i se et pinout herunder. Pas på med at bruge pins der har andre formål end GPIO.
+## Hvis i skal bruge flere pins på jeres ESP kan i se et pinout herunder. Pas på med at bruge pins der har andre formål end GPIO.
 
 **ESP32-C3 Dev Module**
 
